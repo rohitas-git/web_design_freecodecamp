@@ -38,3 +38,16 @@ A class selector is defined by a name with a dot directly in front of it, like t
 }
 
 To apply the class's styling to the div element, remove the id attribute and add a class attribute to the div element's opening tag. 
+
+## Block level elements
+Block-level elements take up the entire width of their parent element.
+
+## Inline elements
+
+
+
+## Style nested elements
+The p elements are nested in an article element with the class attribute of item.
+You can style all the p elements nested anywhere in elements with a class named item like this:
+
+.item p { }
