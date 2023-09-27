@@ -36,3 +36,5 @@ A class selector is defined by a name with a dot directly in front of it, like t
 .class-name {
   styles
 }
+
+To apply the class's styling to the div element, remove the id attribute and add a class attribute to the div element's opening tag. 
