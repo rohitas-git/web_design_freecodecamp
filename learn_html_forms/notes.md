@@ -67,7 +67,9 @@ Add a label with the text Provide a bio: at the end of the fieldset. Add a texta
 <!-- why give name attr -->
 With form submissions, it is useful, and good practice, to provide each submittable element with a name attribute. This attribute is used to identify the element in the form submission.
 
-<!--  -->
-You can select the last element of a specific type using the last-of-type CSS pseudo-class, like this:
+<!-- select last element of a specific type -->
+using the last-of-type CSS pseudo-class, like this:
+    p:last-of-type { }
 
-p:last-of-type { }
+<!-- attribute selector -->
+input[name="givenName"]{}

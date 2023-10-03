@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My survey form</title>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="heading">
+			<h1 id="title">Survey Form</h1>
+			<p id="description">A random survey</p>
+		</div>
+		<form id="survey-form">
+			<label id="name-label" for="name"
+				>Name
+				<input
+					type="text"
+					id="name"
+					name="name"
+					required
+					placeholder="Enter your name"
+					alt="Your Name."
+			/></label>
+			<label id="email-label" for="email"
+				>Email
+				<input
+					type="email"
+					name="email"
+					id="email"
+					required
+					placeholder="Enter your email"
+					alt="Your Email."
+				/>
+			</label>
+			<label id="number-label" for="number"
+				>Age (optional)
+				<input
+					type="number"
+					id="number"
+					min="18"
+					max="120"
+					placeholder="Age"
+					alt="Your Age."
+				/>
+			</label>
+
+			<label id="select-role">
+				Which option best describes your current role?
+				<select name="role-dropdown" id="role-dropdown">
+					<option value="">Select current role</option>
+					<option value="1">Student</option>
+					<option value="2">Full Time Job</option>
+					<option value="3">Full Time Learner</option>
+					<option value="4">Prefer not to say</option>
+					<option value="5">Other</option>
+				</select>
+			</label>
+
+			<label for="python-option" name="favorite-language"
+				>Choose your favorite programming language
+				<input
+					type="radio"
+					name="favorite-language"
+					id="python-option"
+					checked
+					value="python"
+				/>Python</label
+			>
+			<label for="javascript-option" name="favorite-language"
+				><input
+					type="radio"
+					name="favorite-language"
+					id="javascript-option"
+					value="javascript"
+				/>Javascript</label
+			>
+			<label for="rust-option" name="favorite-language"
+				><input
+					type="radio"
+					name="favorite-language"
+					id="rust-option"
+					value="rust"
+				/>
+				Rust
+			</label>
+			<label for="own-option"
+				><input
+					type="radio"
+					name="favorite-language"
+					id="own-option"
+					value="own"
+				/>
+				Self-created language
+			</label>
+
+			<label name="experience-checkbox">
+				Which all areas have worked in? (Check all that apply) <br />
+				Front-end Projects
+				<input
+					type="checkbox"
+					name="experience-checkbox"
+					value="frontend-projects"
+				/>
+				Backend-end Projects
+				<input
+					type="checkbox"
+					name="experience-checkbox"
+					value="backend-projects"
+				/>
+				Data Visualization
+				<input
+					type="checkbox"
+					name="experience-checkbox"
+					value="data-visualization"
+				/>
+				AI
+				<input type="checkbox" name="experience-checkbox" value="ai" />
+			</label>
+
+			<label for="comment-area"
+				>Any comments or suggestions?
+				<textarea
+					id="comment-area"
+					name="comment-area"
+					rows="10"
+					cols="30"
+					placeholder="Enter your comment here..."
+				></textarea>
+			</label>
+			<input type="submit" value="submit" id="submit" />
+		</form>
+	</body>
+</html>
